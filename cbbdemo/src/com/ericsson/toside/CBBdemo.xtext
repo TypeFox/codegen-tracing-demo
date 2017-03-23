@@ -1,0 +1,18 @@
+grammar com.ericsson.toside.CBBdemo with org.eclipse.xtext.common.Terminals
+
+generate cbbdemo "http://www.ericsson.com/toside/CBBdemo"
+
+Program:
+	statements+=Statement*;
+
+Statement:
+	Greeting | Goodbye
+;
+
+Greeting:
+	'Hello' name=ID
+;
+
+Goodbye:
+	'Bye' name=ID
+;

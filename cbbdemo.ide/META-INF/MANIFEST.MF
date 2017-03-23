@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: cbbdemo.ide
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: cbbdemo.ide; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: cbbdemo,
+ org.eclipse.xtext.ide,
+ org.eclipse.xtext.xbase.ide,
+ org.antlr.runtime
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: com.ericsson.toside.ide.contentassist.antlr.internal,
+ com.ericsson.toside.ide.contentassist.antlr
+
