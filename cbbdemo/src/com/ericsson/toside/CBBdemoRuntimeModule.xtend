@@ -3,9 +3,23 @@
  */
 package com.ericsson.toside
 
+import org.eclipse.xtext.generator.IFilePostProcessor
+import org.eclipse.emf.common.util.URI
 
 /**
  * Use this class to register components to be used at runtime / without the Equinox extension registry.
  */
 class CBBdemoRuntimeModule extends AbstractCBBdemoRuntimeModule {
+	
+	def Class<? extends IFilePostProcessor> bindIFilePostProcessor() {
+		return NoOpPostProcessor;
+	}
+	
+	static class NoOpPostProcessor implements IFilePostProcessor {
+		
+		override postProcess(URI fileURI, CharSequence content) {
+			content
+		}
+		
+	}
 }
