@@ -4,7 +4,7 @@
 	<extension point="org.eclipse.emf.ecore.generated_package">
 		<package 
 			uri = "http://www.ericsson.com/toside/CBBdemo"
-			class = "com.ericsson.toside.cbbdemo.CBBdemoPackage"
+			class = "com.ericsson.toside.cbbdemo.CbbdemoPackage"
 			genModel = "model/generated/CBBdemo.genmodel" />
 	</extension>
 </plugin>
