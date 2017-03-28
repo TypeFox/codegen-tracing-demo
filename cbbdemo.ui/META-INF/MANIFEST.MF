@@ -19,7 +19,10 @@ Require-Bundle: cbbdemo,
  org.eclipse.xtext.xbase.lib
 Import-Package: org.apache.log4j
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Export-Package: com.ericsson.toside.ui.quickfix,
- cbbdemo.ui.internal,
- com.ericsson.toside.ui.contentassist
+Export-Package: cbbdemo.ui.internal;uses:="org.osgi.framework,com.google.inject,org.eclipse.ui.plugin",
+ com.ericsson.toside.ui,
+ com.ericsson.toside.ui.contentassist,
+ com.ericsson.toside.ui.labeling,
+ com.ericsson.toside.ui.outline,
+ com.ericsson.toside.ui.quickfix;uses:="org.eclipse.xtext.ui.editor.quickfix"
 Bundle-Activator: cbbdemo.ui.internal.CbbdemoActivator
